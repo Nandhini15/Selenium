@@ -1,0 +1,30 @@
+from selenium import webdriver as wd
+
+driver = wd.Chrome()
+
+driver.get('https://www.facebook.com/')
+name = driver.find_element_by_name("firstname")
+name.send_keys("nandhini")
+lastname = driver.find_element_by_name("lastname")
+lastname.send_keys("anbalagan")
+#Object Locator
+#Firebug download - 
+#insect kind of symbol at the top right of navbar
+#Firebug path download - Add to firefox
+
+from selenium import webdriver as wd
+
+driver = wd.Chrome()
+
+driver.get('https://www.facebook.com/')
+name = driver.find_element_by_name("firstname")
+name.send_keys("nandhini")
+lastname = driver.find_element_by_name("lastname")
+lastname.send_keys("anbalagan")
+#Object Locator
+# link = driver.find_element_by_xpath("//a[text() = 'Forgot account?']")
+# link.click()
+# driver.find_element_by_link_text("Forgot account?").click()
+# driver.find_element_by_class_name()
+# driver.find_element_by_xpath("//*[@id=\"login_form\"]/table/tbody/tr[3]/td[2]/div/a").click() - xpath copied vd copy option
+driver.find_element_by_xpath("//a[text() = 'Forgot account?']").click() 
