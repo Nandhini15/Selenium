@@ -28,3 +28,6 @@ driver.refresh()
 
 #browser funcs in selenium
 #browser specific methods
+driver.maximize_window()
+# driver.quit // all the base and child windows ll get closed
+# driver.close() // only the base window ll close.. not the sec window
