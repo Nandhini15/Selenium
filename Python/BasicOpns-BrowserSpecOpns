@@ -1,0 +1,30 @@
+from selenium import webdriver as wd
+
+driver = wd.Chrome()
+
+driver.get('https://www.google.com/')
+print(driver.current_url)
+print(driver.title)
+driver.close()
+
+from selenium import webdriver as wd
+
+driver = wd.Chrome()
+
+driver.get('https://www.google.com/')
+print(driver.current_url)
+print(driver.title)
+driver.get('https://gmail.com')
+print(driver.current_url)
+print(driver.title)
+driver.back()
+print(driver.current_url)
+print(driver.title)
+driver.forward()
+print(driver.current_url)
+print(driver.title)
+driver.refresh()
+# driver.close()
+
+#browser funcs in selenium
+#browser specific methods
